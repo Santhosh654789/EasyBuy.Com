@@ -5,16 +5,12 @@
     font-family: Arial, sans-serif;
 }
 
-@media (min-width: 768px) {
-    .product-card img {
-        width: calc(33.33% - 15px);
-    }
+@media screen and (max-width: 941px) {
+    
 }
 
-@media (min-width: 1024px) {
-    .product-card img {
-        width: calc(16.66% - 15px);
-    }
+@media screen and (max-width : 808px) {
+    
 }
 
 .navbar {
