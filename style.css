@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 768px) {
-  .product-card{ font-size: 14px; }
+  .products{ font-size: 14px; }
 }
 
 .navbar {
