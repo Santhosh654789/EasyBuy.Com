@@ -161,10 +161,16 @@ footer {
     padding: 35px;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    margin: 100px auto;  
 
-    margin-left: 570px;
-    margin-top: 100px;
-
+}
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+        padding: 22px;
+        margin-top: 60px;
+        border-radius: 12px;
+    }
 }
 
 .login-container h2 {
@@ -250,18 +256,17 @@ button:hover {
 
 /* SignIn Page */
 
+/* Desktop default */
 .signup-container {
-    background:lightyellow;
+    background: lightyellow;
     width: 400px;
-    padding: 35px;
+    padding: 40px 50px 60px;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    padding: 40px 50px 60px;
-
-   margin-left: 1000px;
-   margin-top: 30px;
+    margin: 40px auto;   /* CENTER */
 }
 
+/* Headings */
 .signup-container h2 {
     text-align: center;
     margin-bottom: 5px;
@@ -321,31 +326,77 @@ button:hover {
     font-weight: bold;
 }
 
+/* Layout container */
 .main-container {
     display: flex;
-    height: 0vh;
+    justify-content: center;
+    align-items: flex-start;
     gap: 40px;
-   
+    padding: 20px;
 }
 
-
+/* Welcome section */
 .welcome-section h1 {
     font-size: 52px;
     color: #4a148c;
-    
     margin-top: 130px;
-    margin-left: 100px;
+    text-align: center;
 }
-
-
 
 .welcome-section p {
     font-size: 20px;
     margin-top: 15px;
     color: #333;
-
-    margin-left: 70px;
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 90%;
+        padding: 30px;
+        margin-top: 30px;
+    }
 
+    .welcome-section h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 40px;
+    }
 
+    .welcome-section p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .signup-container {
+        width: 95%;
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .welcome-section h1 {
+        font-size: 32px;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+    }
+}
